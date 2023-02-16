@@ -8,7 +8,7 @@ namespace DropItem
     [RequireComponent(typeof(Collider))]
     public abstract class DropItemBase : MonoBehaviour, IDropItem
     {
-        [FormerlySerializedAs("_destructionPrefab")] [SerializeField] private DestructBase _destructPrefab;
+        [SerializeField] private DestructBase _destructPrefab;
 
         private void Awake()
         {
@@ -19,7 +19,8 @@ namespace DropItem
         {
             if (_destructPrefab != null)
             {
-                _destructPrefab.Destruct();
+                var destructInstance = Instantiate(_destructPrefab, transform.parent);
+                destructInstance.Destruct();
             }
             
             Destroy(gameObject);

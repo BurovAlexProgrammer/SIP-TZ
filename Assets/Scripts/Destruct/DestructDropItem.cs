@@ -1,4 +1,5 @@
 using DG.Tweening;
+using UnityEngine;
 
 namespace Destruct
 {
@@ -6,7 +7,10 @@ namespace Destruct
     {
         public override void Destruct()
         {
-            transform.DOScale(0f, 0.5f).OnComplete(() => Destroy(gameObject));
+            DOTween.Sequence()
+                .Append(transform.DOScale(0f, 0.5f).SetEase(Ease.InOutCubic))
+                .Join(transform.DOLocalMoveY(transform.localPosition.y + 1f, 0.5f).SetEase(Ease.InOutCubic))
+                .OnComplete(() => Destroy(gameObject));
         }
     }
 }
