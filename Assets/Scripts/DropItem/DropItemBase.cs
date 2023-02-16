@@ -8,19 +8,12 @@ namespace DropItem
     {
         [SerializeField] private DestructionBase _destructionPrefab;
 
-        private Collider _collider;
-
         private void Awake()
         {
-            _collider = GetComponent<Collider>();
             OnAwake();
         }
 
         public virtual void Apply(GameObject target)
-        {
-        }
-
-        public virtual void Destroy()
         {
             if (_destructionPrefab != null)
             {
@@ -29,7 +22,7 @@ namespace DropItem
             
             Destroy(gameObject);
         }
-        
+
         protected virtual void OnAwake() {}
     }
 
