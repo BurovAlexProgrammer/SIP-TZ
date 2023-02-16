@@ -4,22 +4,22 @@ namespace Context
 {
     public class GameSession : Service<GameSession>
     {
-        public event Action<int> OnScoresChanged;
+        public event Action<int> OnCoinsCountChanged;
 
-        private int _scores;
+        private int _coinCount;
 
-        public int Scores => _scores;
+        public int CoinCount => _coinCount;
 
         public void AddScores(int value)
         {
-            _scores += value;
-            OnScoresChanged?.Invoke(_scores);
+            _coinCount += value;
+            OnCoinsCountChanged?.Invoke(_coinCount);
         }
 
         public void Restart()
         {
-            _scores = 0;
-            OnScoresChanged?.Invoke(_scores);
+            _coinCount = 0;
+            OnCoinsCountChanged?.Invoke(_coinCount);
         }
     }
 }
