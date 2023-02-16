@@ -1238,6 +1238,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3280949955281065074, guid: d2c520d30b721944194845c0de7590c7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356086864065818689, guid: d2c520d30b721944194845c0de7590c7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356086864065818689, guid: d2c520d30b721944194845c0de7590c7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787574943280396607, guid: d2c520d30b721944194845c0de7590c7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2c520d30b721944194845c0de7590c7, type: 3}
 --- !u!1001 &7288094137546172433
@@ -1391,6 +1411,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CoinGood
+      objectReference: {fileID: 0}
+    - target: {fileID: 8888133591803431589, guid: 67aeb96ac17465b42a0baf7bc9e01225,
+        type: 3}
+      propertyPath: m_TagString
+      value: DropItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 8888133593344062504, guid: 67aeb96ac17465b42a0baf7bc9e01225,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8888133593344062506, guid: 67aeb96ac17465b42a0baf7bc9e01225,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67aeb96ac17465b42a0baf7bc9e01225, type: 3}
