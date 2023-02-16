@@ -13,6 +13,6 @@ public class Bootstrap : MonoBehaviour
             .Append(_frameImage.DOFade(0f, 1f))
             .AppendInterval(1.5f)
             .Append(_frameImage.DOFade(1f, 1f))
-            .OnComplete(() => SceneManager.LoadScene(Scenes.Main));
+            .OnComplete(() => SceneManager.LoadScene(Scenes.MAIN));
     }
 }
