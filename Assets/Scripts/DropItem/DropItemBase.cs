@@ -1,13 +1,14 @@
 using System;
-using DG.Tweening;
+using Destruct;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace DropItem
 {
     [RequireComponent(typeof(Collider))]
     public abstract class DropItemBase : MonoBehaviour, IDropItem
     {
-        [SerializeField] private DestructionBase _destructionPrefab;
+        [FormerlySerializedAs("_destructionPrefab")] [SerializeField] private DestructBase _destructPrefab;
 
         private void Awake()
         {
@@ -16,22 +17,14 @@ namespace DropItem
 
         public virtual void Apply(GameObject target)
         {
-            if (_destructionPrefab != null)
+            if (_destructPrefab != null)
             {
-                _destructionPrefab.Destruct();
+                _destructPrefab.Destruct();
             }
             
             Destroy(gameObject);
         }
 
         protected virtual void OnAwake() {}
-    }
-
-    public abstract class DestructionBase : MonoBehaviour
-    {
-        public void Destruct()
-        {
-            transform.DOScale(0f, 0.5f).OnComplete(() => Destroy(gameObject));
-        }
     }
 }

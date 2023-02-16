@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3598347-2b0d-45e5-9dec-4ef6efc81c1c" name="Changes" comment="" />
+    <list default="true" id="d3598347-2b0d-45e5-9dec-4ef6efc81c1c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Destruct.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Destruct/IDestruct.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Destruct/IDestruct.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DropItem/DropItemBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DropItem/DropItemBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676552371241</updated>
-      <workItem from="1676552374424" duration="8750000" />
+      <workItem from="1676552374424" duration="10936000" />
     </task>
     <servers />
   </component>
@@ -81,24 +88,5 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/DropItem/DropItemBase.cs</url>
-          <line>22</line>
-          <properties documentPath="D:\UnityProjects\SIP-TZ\Assets\Scripts\DropItem\DropItemBase.cs" initialLine="22" containingFunctionPresentation="method 'Apply'">
-            <startOffsets>
-              <option value="523" />
-            </startOffsets>
-            <endOffsets>
-              <option value="543" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
