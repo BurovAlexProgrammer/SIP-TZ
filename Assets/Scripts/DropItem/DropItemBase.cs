@@ -20,7 +20,7 @@ namespace DropItem
             if (_destructPrefab != null)
             {
                 var destructInstance = Instantiate(_destructPrefab, transform.parent);
-                destructInstance.Destruct();
+                destructInstance.Destruct(transform);
             }
             
             Destroy(gameObject);

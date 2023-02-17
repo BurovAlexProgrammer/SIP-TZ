@@ -4,6 +4,9 @@ namespace Destruct
 {
     public abstract class DestructBase : MonoBehaviour
     {
-        public abstract void Destruct();
+        public virtual void Destruct(Transform callerTransform)
+        {
+            transform.position = callerTransform.position;
+        }
     }
 }

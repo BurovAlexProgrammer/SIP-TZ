@@ -1,6 +1,7 @@
 using System;
 using Cysharp.Threading.Tasks;
 using Player;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using Zenject;
 
@@ -8,6 +9,8 @@ namespace Services
 {
     public class GameSessionService : MonoServiceBase
     {
+        [SerializeField] private int _coinsToWin = 10;
+        
         public event Action<int> OnCoinsCountChanged;
         
         private int _coinCount;
@@ -37,9 +40,15 @@ namespace Services
             OnCoinsCountChanged?.Invoke(_coinCount);
         }
         
+        public void GameOver()
+        {
+            StartGame();
+            ReloadScene();
+        }
+        
         private void VerifyCoinsCount()
         {
-            if (_coinCount >= 1) Win().Forget();
+            if (_coinCount >= _coinsToWin) Win().Forget();
         }
         
         private async UniTaskVoid Win()
@@ -49,13 +58,7 @@ namespace Services
             StartGame();
             ReloadScene();
         }
-        
-        private void GameOver()
-        {
-            StartGame();
-            ReloadScene();
-        }
-        
+
         private void ReloadScene()
         {
             SceneManager.LoadScene(Scenes.MAIN);

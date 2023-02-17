@@ -4,7 +4,7 @@ using Zenject;
 
 namespace DropItem
 {
-    public class DropItemCoin : DropItemBase
+    public class DropItemCoinGood : DropItemBase
     {
         [SerializeField] private int _scores = 1;
 

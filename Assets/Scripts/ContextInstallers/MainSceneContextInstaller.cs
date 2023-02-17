@@ -3,7 +3,7 @@ using Services;
 using UnityEngine;
 using Zenject;
 
-namespace Context
+namespace ContextInstallers
 {
     public class MainSceneContextInstaller : MonoInstaller
     {

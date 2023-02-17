@@ -1,10 +1,9 @@
-using Cysharp.Threading.Tasks;
+using Services;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using Zenject;
 
-namespace Services
+namespace ContextInstallers
 {
     public class ProjectContextInstaller : MonoInstaller
     {
