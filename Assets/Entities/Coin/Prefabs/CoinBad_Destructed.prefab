@@ -70,7 +70,7 @@ PrefabInstance:
     - target: {fileID: 8888133591803431589, guid: 67aeb96ac17465b42a0baf7bc9e01225,
         type: 3}
       propertyPath: m_Name
-      value: CoinGood_Destructed
+      value: CoinBad_Destructed
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8888133591803431586, guid: 67aeb96ac17465b42a0baf7bc9e01225, type: 3}
