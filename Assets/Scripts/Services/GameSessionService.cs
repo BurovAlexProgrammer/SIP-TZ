@@ -1,7 +1,9 @@
 using System;
 using Cysharp.Threading.Tasks;
 using Player;
+using StarterAssets;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using Zenject;
 
@@ -16,6 +18,7 @@ namespace Services
         private int _coinCount;
         
         [Inject] private GameSessionUiService _gameUIService;
+        [Inject] private StarterAssetsInputs _inputs;
         [Inject] private PlayerBase _player;
         
         public int CoinCount => _coinCount;
@@ -23,6 +26,12 @@ namespace Services
         private void Start()
         {
             StartGame();
+            _inputs.OnRestartPressed += RestartGame;
+        }
+
+        private void OnDestroy()
+        {
+            _inputs.OnRestartPressed += RestartGame;
         }
 
         public void AddScores(int value)
@@ -43,6 +52,11 @@ namespace Services
         public void GameOver()
         {
             StartGame();
+            ReloadScene();
+        }
+
+        private void RestartGame()
+        {
             ReloadScene();
         }
         

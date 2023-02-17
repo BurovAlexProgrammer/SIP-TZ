@@ -813,7 +813,7 @@ PrefabInstance:
     - target: {fileID: 4397730028236805695, guid: b5ac0fa074012ad4d95fcbbcce69d9d9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4397730028236805695, guid: b5ac0fa074012ad4d95fcbbcce69d9d9,
         type: 3}
@@ -1295,7 +1295,7 @@ PrefabInstance:
     - target: {fileID: 4397730028236805695, guid: b5ac0fa074012ad4d95fcbbcce69d9d9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4397730028236805695, guid: b5ac0fa074012ad4d95fcbbcce69d9d9,
         type: 3}
@@ -1525,6 +1525,7 @@ MonoBehaviour:
   _gameUiService: {fileID: 222615285}
   _gameSessionService: {fileID: 1960850410}
   _player: {fileID: 135756641613574976}
+  _inputs: {fileID: 135756641613574975}
 --- !u!1001 &1417676651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1615,7 +1616,7 @@ PrefabInstance:
     - target: {fileID: 4397730028236805695, guid: b5ac0fa074012ad4d95fcbbcce69d9d9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4397730028236805695, guid: b5ac0fa074012ad4d95fcbbcce69d9d9,
         type: 3}

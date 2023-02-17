@@ -6,8 +6,6 @@ namespace DropItem
 {
     public class DropItemCoinBad : DropItemBase
     {
-        [SerializeField] private int _scores = 0;
-
         [Inject] private GameSessionService _gameSession; 
         
         public override void Apply(GameObject target)
