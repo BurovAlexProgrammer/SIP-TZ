@@ -1,8 +1,11 @@
+using System;
+
 namespace Context
 {
+    [Serializable]
     public abstract class Service<T> where T : new()
     {
-        private static T _instance;
+        protected static T _instance;
 
         public static T Instance
         {
